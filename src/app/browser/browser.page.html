@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Omniplex Salthill</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div>
+    <h3>Here are the screening times for Omniplex Salthill</h3>
+    <!--openBrowser() function opens up the link for cinema times-->
+    <ion-button (click)="openBrowser()">CINEMA TIMES</ion-button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--routerlink to send us back to the home page-->
+    <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>

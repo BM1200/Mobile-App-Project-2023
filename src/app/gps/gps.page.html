@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>GPS</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GPS</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+    <!--The getGPS() function  gets the current GPS of the device using the app-->
+    <ion-button (click)="getGPS()">Get GPS</ion-button>
+    {{lat}}, {{long}}
+    </div>
+    <!--<br> tags give us line breaks to make the home button not be directly underneath GPS-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--routerlink to send us back to the home page-->
+    <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>

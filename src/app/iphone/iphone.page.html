@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>iPhone</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title color = "red" size="medium">iPhone</ion-title>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-toolbar>
+  </ion-header>
+  <h3>iPhone (Brief Overview)</h3>
+  <p>The iPhone is a smartphone developed by Apple Inc. and first released in 2007. It has since become one of the most popular and iconic smartphones in the world,
+    known for its sleek design and user-friendly interface. The iPhone has undergone numerous updates and revisions over the years, with new models released annually.
+   </p>
+   <!--routerlink used to go to the history of apple page-->
+   <p>Click here for a more in depth view on the history of Apple</p>
+   <li [routerLink]="['/applehistory']" color="orange">The history of Apple</li><br>
+  <div style="align-content: center;">
+  <ion-img size = small src="https://upload.wikimedia.org/wikipedia/commons/4/49/Size_comparison_of_iPhone_5C_5S_4S.jpg"></ion-img>
+  </div>
+  <!--routerlink to send us back to the home page-->
+  <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+  
+</ion-content>

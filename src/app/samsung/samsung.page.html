@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Samsung</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium" color="yellow">Samsung</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h3>Samsung (Brief Overview)</h3>
+  <p>Samsung is a South Korean electronics company that has been producing smartphones since 2009. Their Galaxy series of phones have become a popular alternative to Apple's iPhone, with features such as large screens, high-quality cameras, and customizable interfaces. 
+    Samsung phones run on the Android operating system and are known for their advanced technology and innovative design.</p>
+    <p>Click here for a more in depth view on the history of Samsung</p>
+   <li [routerLink]="['/samsunghistory']" color="orange">The history of Samsung</li><br>
+   <!--routerlink to get to 'history of' page-->
+    <ion-img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Galaxy_Z_Flip.jpg"></ion-img>
+    <!--routerlink to send us back to the home page-->
+    <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Project Summary</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Project Summary</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-img src="https://upload.wikimedia.org/wikipedia/en/2/28/ATU-Logo-Full-RGB-Teal.png"></ion-img>
+  <h1></h1>
+  <p>For this project I studied four of the most popular phone distributors of the past decade. There are 4 pages for each phone company that gives a brief summary of their history and impact on our culture.</p>
+  <p>There are four major features of this app, one is a GPS that displays your current location, 
+     one saves your favourite phone company from a radio button, one is an API that lists names and posters of movies and finally the fourth feature gets you current cinema times for Salthill Omniplex</p>
+     <!--routerlink to send us back to the home page-->
+    <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>

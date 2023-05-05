@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>The History of Apple</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<!--ion-img tag allows me to use links to show my images using 'src', similar to HTML-->
+  <ion-img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Apple_II_Plus%2C_Museum_of_the_Moving_Image.jpg"></ion-img>
+  <p size = "small">
+
+    Apple is one of the most iconic technology companies in the world, known for its innovative products, sleek design, and revolutionary marketing strategies. The company was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, who set out to create a personal computer that could be used by anyone.
+    
+    The first Apple computer, the Apple I, was introduced in 1976 and sold for $666.66. The Apple II followed in 1977 and was the first mass-market personal computer. It was a huge success, selling over 6 million units and making Apple a household name.
+    
+    Throughout the 1980s, Apple continued to innovate with the release of the Macintosh, a personal computer with a graphical user interface that was easy to use and had a unique design. However, the company faced stiff competition from IBM and Microsoft, and its market share began to decline.
+
+   <ion-img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/MacBook_Pro.jpg"></ion-img>
+    
+    In 1997, Steve Jobs returned to Apple as CEO and began a period of revitalization for the company. He introduced a series of new products, including the iMac, iPod, iPhone, and iPad, which were all huge successes and helped to redefine the technology industry.
+    
+    Today, Apple is one of the most valuable companies in the world, with a market capitalization of over $2 trillion. It continues to innovate with new products and services, such as the Apple Watch and Apple Pay, and remains a leader in design and user experience. Its ecosystem of products and services, including the App Store, iCloud, and iTunes, has transformed the way we interact with technology and has made Apple a household name around the world.</p>
+    <!--I used the 'back to home' routerlink just in case my back button crashes-->
+    <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>
